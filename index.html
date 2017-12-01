@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US" ng-app="MyFirstApp">
+
+<head>
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body ng-controller="MainCtrl">
+
+    <md-toolbar class="md-hue-2">
+        <div class="md-toolbar-tools">
+            <md-button class="md-icon-button" aria-label="OSTRIO">
+                <i class="material-icons md-48 md-light">hearing</i>
+            </md-button>
+
+            <h2 flex md-truncate>OSTRIO</h2>
+
+            <md-button ng-click="changeURL('about')">About Us</md-button>
+            <md-button ng-click="changeURL('gallery')">Gallery</md-button>
+            <md-button ng-click="changeURL('contact')">Contact</md-button>
+
+        </div>
+    </md-toolbar>
+
+    <section ui-view></section>
+
+    <footer id="footer">
+        <center>2017 &copy; Copyrights by OSTRIO</center>
+    </footer>
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.js"></script>
+    <script src="bower_components/angular-messages/angular-messages.js"></script>
+    <script src="bower_components/angular-material/angular-material.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
